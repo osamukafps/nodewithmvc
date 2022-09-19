@@ -4,10 +4,11 @@ const exphbs = require('express-handlebars');
 const app = express();
 const conn = require('./db/Conn');
 
-const task = require('./model/Task')
+const task = require('./model/Task');
+const taskRoutes = require('./routes/taskRoutes');
 
 app.engine('handlebars', exphbs.engine());
-app.set('view-engine', 'handlebars');
+app.set('view engine', 'handlebars');
 app.use(
     express.urlencoded({
         extended: true
@@ -15,6 +16,8 @@ app.use(
 
 app.use(express.json());
 app.use(express.static('public'));
+
+app.use('/tasks', taskRoutes);
 
 conn
 .sync()
