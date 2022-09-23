@@ -6,5 +6,8 @@ _**Utilizando:**_
 * ExpressJS (Framework)
 * Express-Handlebars (Template Engine)
 * MySQL (DB)
-* Sequelize (ORM)
-
+* Sequelize (ORM)  
+  
+  
+## **_Tela Principal_**
+![alt text](https://github.com/osamukafps/nodewithmvc/blob/main/images/Screenshot%20from%202022-09-22%2022-24-49.png?raw=true)
